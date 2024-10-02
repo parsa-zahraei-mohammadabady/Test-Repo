@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/typing.js" defer></script>
+  <!--<script src="./js/main.js" defer></script>-->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/typing.css">
+  <title>Quote Room</title>
+</head>
+<body>
+
+<div id="wrapper">
+  <div id="room-list-div">
+    <h3 id="open-rooms">Open Rooms</h3>
+    <ul id="room-list" class="indexlist">
+      <li id="room"></li>
+    </ul>
+  </div>
+  <button id="refresh" onclick="refreshRoomDict()">Refresh</button>
+
+  <div id = "game-rooms">
+    <h1 id="index-title">Game Rooms</h1>
+    <div>
+      <input id="room-code-new">
+      <button id="create-room" onclick="createRoom()">Create Room</button>
+    </div>
+    <div id="room-select">
+      <input id="room-code">
+      <button id="join-room" onclick="joinRoom()">Join</button>
+    </div>
+  </div>
+</div>
+
+<div id="leaderinput">
+  <div id="typing-interface">
+    <div class="timer" id="timer"></div>
+    <div class="container">
+      <div class="quote-display" id="quoteDisplay"></div>
+      <textarea id="quoteInput" class="quote-input" autofocus></textarea>
+    </div>
+  </div>
+
+  <div id="local-leaderboard">
+    <h1>Local Leaderboard</h1>
+    <ul id="user-scores" class="indexlist">
+      <li id="score"></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Header Footer -->
+<header>
+  <div id="navbar">
+    <ul>
+      <li id="navli"><a href="#" id="home" onclick="window.location.href = 'home.html';">Home</a></li>
+      <li id="navli"><a href="#" id="dashboard" onclick="window.location.href = 'index.html';">Rooms</a></li>
+      <li id="navli"><a href="#" id="about" onclick="window.location.href = 'about.html';">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<footer>
+  <p>Copyright © CSCI 2020U - Winter 2023</p>
+</footer>
+
+
+</body>
+</html>

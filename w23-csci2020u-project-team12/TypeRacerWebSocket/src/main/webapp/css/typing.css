@@ -1,0 +1,76 @@
+*
+{
+    box-sizing: border-box;
+}
+.body
+{
+    font-family: 'Chivo';
+}
+div#local-leaderboard
+{
+    color: black;
+    background-color: #888a97;
+    border-radius: 2px;
+    width: 400px;
+    margin-top: -10%;
+    margin-left: 5%;
+
+}
+.container
+{
+    background-color: #888a97;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+
+    margin: auto;
+    margin-top: 20%;
+}
+
+.timer
+{
+    position: absolute;
+    top: 2rem;
+    font-size: 4rem;
+    color: #5f668b;
+    margin-left: 47.5%;
+}
+
+.quote-display
+{
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+}
+
+.quote-input
+{
+    background-color: transparent;
+    border: 2px solid #000000;
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.quote-input:focus
+{
+    border-color: black;
+}
+
+.correct
+{
+    color: green;
+    text-decoration: underline;
+}
+
+.incorrect
+{
+    color: red;
+}
+

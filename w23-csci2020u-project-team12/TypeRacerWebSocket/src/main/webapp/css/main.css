@@ -1,0 +1,268 @@
+/* open rooms page */
+h1#index-title
+{
+  color:#ADACB5;
+  display: flex;
+  flex-direction: column;
+}
+
+div#room-list-div
+{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+}
+
+.indexlist
+{
+  list-style: none;
+  /* no bullet points */
+  color: #D8D5DB;
+  overflow: auto;
+}
+
+h3#open-rooms
+{
+  color: #D8D5DB;
+  opacity: 0;
+  animation: fade 2s forwards;
+}
+
+button#refresh
+{
+  width: 300px;
+}
+
+
+ul#room-list
+{
+  color: #D8D5DB;
+}
+
+.li{color: white}
+
+div#leaderinput
+{
+  margin-top: -40%;
+}
+
+/* room list chatroom page */
+li#room a
+{
+  color: #5f668b;
+}
+
+li#room a:hover
+{
+  color: #ADACB5;
+}
+div#game-rooms
+{
+  color:#D8D5DB;
+  display: flex;
+  /* this will display everything within the boundaries of the div relatively, and flex them */
+  flex-direction: column;
+}
+div#wrapper
+{
+  margin-top: 10%;
+}
+
+div#typing-interface
+{
+  margin-top: -30%;
+}
+div#local-leaderboard
+{
+  float: right;
+  height: 300px;
+  overflow: auto;
+  margin-top: -10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Non-Crucial Pages */
+/* homepage */
+div#homepage
+{
+  color:#ADACB5;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+  align-items: center;
+  justify-content: center;
+  /* centering */
+}
+h1#homeabout
+{
+  margin: 0;
+  animation: fade 2s;
+}
+h3#homeabout
+{
+  top: 25px;
+  color: #D8D5DB;
+  opacity: 0;
+  animation: fade 4s forwards;
+  animation-delay: 2s;
+}
+
+
+/* aboutpage */
+div#aboutpage
+{
+  color: #ADACB5;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+ul#aboutpagecontributors
+{
+  color: #ffffff;
+  opacity: 0;
+  animation: fade 4s forwards;
+  animation-delay: 2s;
+}
+ul#aboutpagetasks
+{
+  color: #ffffff;
+  opacity: 0;
+  animation: fade 4s forwards;
+  animation-delay: 4s;
+}
+h3#aboutpageh3-2
+{
+  top: 25px;
+  color: #D8D5DB;
+  opacity: 0;
+  animation: fade 4s forwards;
+  animation-delay: 4s;
+}
+
+
+
+/* General CSS */
+
+
+/* header */
+header
+{
+  font-size: larger;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  animation: fade 2s;
+}
+
+/* footer */
+footer
+{
+  color: #5f668b;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  animation: fade 2s;
+}
+
+/* navbar */
+div#navbar
+{
+  height: 20px;
+  display: table;
+  float: left;
+  margin: 0 auto;
+}
+li#navli
+{
+  display: inline;
+}
+li#navli a
+{
+  color: #5f668b;
+  padding: 5px;
+  text-decoration: none;
+}
+li#navli a:hover
+{
+  color: #ADACB5;
+}
+
+/* scrollbar */
+::-webkit-scrollbar
+{
+  background: #464a5a;
+  border: none;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #62607a;
+  border: none;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D8D5DB;
+}
+
+/* webpage formatting */
+body
+{
+  font-family: 'Chivo';
+  background-image: url("../img/memphis-mini-dark.png");
+  /* Source:  https://www.toptal.com/designers/subtlepatterns/uploads/memphis-mini-dark.png*/
+}
+
+/* animations */
+@keyframes fade
+{
+  0%{opacity: 0}
+  100%{opacity: 1;}
+  /*takes opacity from 0 and gradients it to 1*/
+}
+
+/* hardcoded data types */
+button
+{
+  background-color: #49475a;
+  color: #b5acbd;
+  border-radius: 7px;
+}
+
+button:hover
+{
+  color: #e3d9ec;
+  transition-duration: .2s;
+}
+
+input
+{
+  background-color: #49475a;
+  color: #b5acbd;
+  border-radius: 7px;
+
+}
